@@ -18,6 +18,9 @@ trplot2(TA, frame = "A", color = 'b')
 P = np.array([4,3])
 plot_point(P, "ko", text = "P")
 
+P1 = homtrans(np.linalg.inv(TA),P)
+print(P1)
+
 
 plt.axis('equal') 
 plt.grid(True) 
